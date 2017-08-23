@@ -27,11 +27,11 @@
     <build>
         <defaultGoal>package</defaultGoal>
         <plugins>
-            <plugin>
+         <!--   <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
-                    <!-- Copy the ant tasks jar. Needed for ts.jacoco.report-ant . -->
+                    &lt;!&ndash; Copy the ant tasks jar. Needed for ts.jacoco.report-ant . &ndash;&gt;
                     <execution>
                         <id>jacoco-dependency-ant</id>
                         <goals>
@@ -52,8 +52,8 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
+            </plugin>-->
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.8</version>
@@ -69,13 +69,13 @@
                                     <classpath path="${basedir}/target/jacoco-jars/org.jacoco.ant.jar" />
                                 </taskdef>
 
-                                <!-- Execute an ant task within maven -->
+                                &lt;!&ndash; Execute an ant task within maven &ndash;&gt;
                                 <echo message="Hello World from pom.xml"/>
                             </target>
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
